@@ -7,17 +7,29 @@ package main;
 public class Theorem {
 
     /* Milyen primitív adattípusok léteznek a Java-ban? Sorold fel őket! - 1p
-        Ide jön a válaszod...
+        Egész szám típusok: byte, short, int, long
+        Törtszám típusok: float, double
+        Nem szám típusok: char, boolean
      */
 
 
     /* Mi a különbség a while és a do-while ciklusok között? - 2p
-        Ide jön a válaszod...
+        A do - while 1x mindenképp lefut, a feltétel vizsgálata az utasítás után történik
+
+
+        A whilet akkor használjuk, ha nem tudjuk hányszor fog lefutni és nem biztos, hogy lefut.
+        A whilenál elsőnek ellenőrzi a feltételt és csak utána fut le
      */
 
 
     /* Mik a tömbök? (Mire használhatóak? Mikor érdemes használni őket? Hogyan hozhatjuk létre őket?) - 3p
-        Ide jön a válaszod...
+        Adattípusokat tartalmaz, és az indexeire, elemeire hivatkozhatunk.
+        egy tömböt többször is fellehet használni.
+
+        Létrehozása pl.: String[] nevek = new String [3]
+        Itt 3 hosszú a tömbünk és [0] az első név.
+
+
      */
 
 }
