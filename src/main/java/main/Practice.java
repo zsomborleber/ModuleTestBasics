@@ -141,7 +141,21 @@ public class Practice {
      * @return a megrendelés teljesítéséhez szükséges napok száma
      */
     public static int getSpaceRabbitDays(int startRabbitValue, int requiredRabbits) {
-        return -1;
+
+        int counter = 0;
+
+      while (startRabbitValue < requiredRabbits){
+          counter++;
+          startRabbitValue *=2;
+          if ( startRabbitValue == requiredRabbits){
+              break;
+          }
+
+
+      }
+        counter++;
+
+        return counter;
     }
 
     /**
@@ -160,7 +174,17 @@ public class Practice {
      * @return a teljes sereg száma
      */
     public static int sumArmy(int[] armyOfPlanets) {
-        return -1;
+
+        int sumArmy = 0;
+
+        for (int i = 0; i < armyOfPlanets.length; i++) {
+
+            sumArmy += armyOfPlanets[i];
+        }
+
+
+
+        return sumArmy;
     }
 
     /**
@@ -179,7 +203,21 @@ public class Practice {
      * @return a megnyert csaták darabszáma
      */
     public static int countVictories(int[] battles) {
-        return -1;
+
+        int counter = 0;
+
+        for (int i = 0; i < battles.length; i++) {
+
+            if (battles[i] == 0){
+
+            }else  if (battles[i] > 0){
+                counter++;
+            }else if (battles[i] < 0);
+
+
+
+        }
+        return counter;
     }
 
     /**
