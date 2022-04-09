@@ -235,16 +235,29 @@ public class Practice {
      */
     public static boolean isInAscendingOrder(int[] heights) {
 
-        boolean sorted =false;
+        int[] clone = heights.clone();
 
-        for (int i = 0; i < heights.length; i++) {
+        boolean sorted = true;
+
+        for (int i = 0; i < clone.length - 1; i++) {
 
 
+            for (int j = 0; j < clone.length - i - 1; j++) {
 
+                if (clone[j] > clone[j + 1]) {
+                    int swap = clone[j];
+                    clone[j] = clone[j + 1];
+                    clone[j + 1] = swap;
+                    sorted = false;
+                }
+            }
+
+            if (sorted) {
+                break;
+            }
         }
 
-
-        return false;
+        return sorted;
     }
 
     /**
