@@ -23,11 +23,15 @@ public class Theorem {
 
 
     /* Mik a tömbök? (Mire használhatóak? Mikor érdemes használni őket? Hogyan hozhatjuk létre őket?) - 3p
-        Adattípusokat tartalmaz, és az indexeire, elemeire hivatkozhatunk.
+        A tömb valójában egy sorszámozott egyforma típusú elemeket tartalmazó halmaz.
+        Halmaz alatt csak annyit értek, hogy több elemet tartalmaz.
+        és az indexeire, elemeire hivatkozhatunk.
         egy tömböt többször is fellehet használni.
 
         Létrehozása pl.: String[] nevek = new String [3]
         Itt 3 hosszú a tömbünk és [0] az első név.
+
+        -Függvényeknél használjuk őket.
 
 
      */
