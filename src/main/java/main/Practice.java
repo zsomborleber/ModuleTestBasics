@@ -282,7 +282,17 @@ public class Practice {
      * @return az eredeti üzenet karakterei fordított sorrendben
      */
     public static char[] reverseMessage(char[] message) {
-        return null;
+        char [] clone = message.clone();
+        char charsIndex = 0;
+        for (int i = 0; i < clone.length/2; i++) {
+
+            charsIndex = clone[i];
+            clone[i] = clone[clone.length-1-i];
+            clone[clone.length-1-i] = charsIndex;
+
+        }
+
+        return clone;
     }
 
     /**
@@ -314,7 +324,22 @@ public class Practice {
      * @return a legtöbb veszteséget tartalmazó hónap index-száma
      */
     public static int getWorstMonthIndex(int[][] lossesPerMonths) {
-        return -1;
+        int worstWarIndex = 0;;
+        int worstWar = 0;
+
+        for (int i = 0; i < lossesPerMonths.length; i++) {
+            int sum1 = 0;
+
+            for (int j = 0; j < lossesPerMonths[i].length; j++) {
+                sum1 += lossesPerMonths[i][j];
+            }
+            if (sum1 > worstWar) {
+                worstWar = sum1;
+                worstWarIndex = i;
+            }
+        }
+        return worstWarIndex;
+
     }
 
     /**
@@ -342,6 +367,7 @@ public class Practice {
      */
     public static void sortShipsByPower(String[] shipNames, int[] shipPowers) {
 
+        return;
     }
 
     // --------------------------------------------------------------------------------------
