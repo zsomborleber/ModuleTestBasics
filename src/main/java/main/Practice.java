@@ -36,7 +36,25 @@ public class Practice {
      * @return a pajzs ereje
      */
     public static int getShieldPower(String shipClass) {
-        return -1;
+
+
+        switch (shipClass){
+            case "Intrepid":
+                return 100;
+            case "Nova":
+                return 200;
+            case "Raven":
+                return 300;
+            case "Galaxy":
+                return 500;
+            case "Dreadnought":
+                return 800;
+            default:
+                return 0;
+
+        }
+
+
     }
 
     /**
@@ -56,7 +74,12 @@ public class Practice {
      * @return az elvárt szint
      */
     public static double countRequirement(int[] scores) {
-        return 0.0;
+
+        int sum = scores[0] + scores[scores.length-1];
+
+        double avarage = (double) sum /2;
+
+        return avarage;
     }
 
     /**
@@ -77,7 +100,16 @@ public class Practice {
      * @return a hajó harcképes-e
      */
     public static boolean isShipAbleToFight(int shieldCharge, int weaponCharge) {
-        return false;
+
+        double avarageCharge = (double) (shieldCharge + weaponCharge) /2;
+
+        if (shieldCharge >=20 && weaponCharge >=20 && avarageCharge > 50){
+            return true;
+        }else {
+            return false;
+        }
+
+
     }
 
     /**
